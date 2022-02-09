@@ -6,52 +6,24 @@ class UserControllers {
         return users;
     };
 
-    async getUserEmail(id) {
-        const users = await userServices.getUser();
-
-        let result = null;
-        users.find((element) => {
-            if(element.id == id) {
-                result = element.email;
-            };
-        });
-        return result;
+    async getUserFullName(id) {
+        const users = await userServices.getUserFullName(id);
+        return users;
     };
 
     async getUserIsAdmin(id) {
-        const users = await userServices.getUser();
-
-        let result = null;
-        users.find((element) => {
-            if(element.id == id) {
-                result = element.isAdmin;
-            };
-        });
-        return result;
+        const users = await userServices.getUserIsAdmin(id);
+        return users;
     };
 
-    async getUserBancAccount(id) {
-        const users = await userServices.getUser();
-
-        let result = null;
-        users.find((element) => {
-            if(element.id == id) {
-                result = element.bankAccount;
-            };
-        });
-        return result;
+    async getbankAccount(id) {
+        const users = await userServices.getbankAccount(id);
+        return users;
     };
 
-    async getStatusUser(id) {
-        const users = await userServices.getUser();
-
-        let result = null;
-        users.find((element) => {
-            if(element.id == id) {
-                result = element.status;
-            };
-        });
-        return result;
+    async getStatus(id) {
+        const users = await userServices.getStatus(id);
+        return users;
     };
 };
 

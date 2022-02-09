@@ -2,23 +2,18 @@
     "users": [
         {
             "id": 1,
-            "email": "valentinKa@mail.ru",
-            "bankAccount": "122331221445",
-            "isAdmin": true,
+            "fullName": "Ihar Ivanov",
+            "age": "25",
+            "bankAccount": "12345878711513215478",
+            "isAdmin": false,
             "status": "null"
         },
         {
             "id": 2,
-            "email": "ivan_ivanov@gmail.com",
-            "bankAccount": "123442123451",
-            "isAdmin": false,
-            "status": "null"
-        },
-        {
-            "id": 3,
-            "email": "olhaiharevna@gmail.com",
-            "bankAccount": "1100002312",
-            "isAdmin": false,
+            "fullName": "Valentina Petrovna",
+            "age": "32",
+            "bankAccount": "122331221445",
+            "isAdmin": true,
             "status": "null"
         }
     ]

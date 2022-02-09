@@ -13,7 +13,7 @@ router.get('/object', async (req, res) => {
 
 router.get('/string/:id', async (req, res) => {
     try {
-        const user = await userControllers.getUserEmail(req.params.id);
+        const user = await userControllers.getUserFullName(req.params.id);
         res.send(user);
     } catch (error) {
         console.log(error);
@@ -31,7 +31,7 @@ router.get('/boolean/:id', async (req, res) => {
 
 router.get('/number/:id', async (req, res) => {
     try {
-        const user = await userControllers.getUserBancAccount(req.params.id);
+        const user = await userControllers.getbankAccount(req.params.id);
         res.send(user);
     } catch (error) {
         console.log(error);
@@ -40,7 +40,7 @@ router.get('/number/:id', async (req, res) => {
 
 router.get('/null/:id', async (req, res) => {
     try {
-        const user = await userControllers.getStatusUser(req.params.id);
+        const user = await userControllers.getStatus(req.params.id);
         res.send(user);
     } catch (error) {
         console.log(error);
